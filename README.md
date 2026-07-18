@@ -27,7 +27,7 @@ sudo apt-get install -y mosquitto-clients jq curl
 The script reads credentials from two sources (in order of preference):
 
 1. Exported environment variables: `MQTT_USER`, `MQTT_PASS`, `HA_TOKEN`
-2. `~/projects/unifi-scripts/secrets.env` (sourced automatically)
+2. `~/projects/secrets.env` (sourced automatically)
 3. Falls back to reading `/homeassistant/secrets.yaml` on the HA host via SSH for `MQTT_PASS`
 
 ## Usage

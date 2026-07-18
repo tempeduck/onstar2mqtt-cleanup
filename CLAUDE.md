@@ -17,7 +17,7 @@ onstar2mqtt add-on). Targets the 2025 Chevrolet Equinox under MQTT prefix
   break or relocate the script without updating that crontab entry.
 - **MQTT broker / HA**: 10.10.1.20 (Mosquitto + HA REST API)
 - **Secrets**: env `MQTT_USER`/`MQTT_PASS`/`HA_TOKEN` → else sourced from
-  `~/projects/unifi-scripts/secrets.env` → else `MQTT_PASS` read from HA
+  `~/projects/secrets.env` → else `MQTT_PASS` read from HA
   `/homeassistant/secrets.yaml` via SSH (`root@10.10.1.20`). Never hardcode.
 - **GitHub**: https://github.com/robertscheib/onstar2mqtt-cleanup (public)
 
@@ -37,6 +37,7 @@ onstar2mqtt add-on). Targets the 2025 Chevrolet Equinox under MQTT prefix
 
 ## Active Handoff
 
+- [2026-06-22 (Antigravity)]: Updated `mqtt_cleanup.sh` and docs to point to the correct secrets file location (`~/projects/secrets.env` instead of `~/projects/unifi-scripts/secrets.env`).
 - [2026-06-20 (Claude Code)]: Added CLAUDE.md + standard AGENTS.md so this project matches
   the rest of the tree (it previously had only a README). No code/cron changes.
 - [2026-06-07]: Built + deployed (idempotent sweep, Sunday 03:00 cron, public GitHub repo).

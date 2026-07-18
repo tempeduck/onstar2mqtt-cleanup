@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-SECRETS_FILE="$HOME/projects/unifi-scripts/secrets.env"
+SECRETS_FILE="$HOME/projects/secrets.env"
 VIN="3GNAXLEG4SL315002"
 MQTT_HOST="10.10.1.20"
 LOG_FILE="$HOME/projects/onstar2mqtt-cleanup/cleanup.log"
